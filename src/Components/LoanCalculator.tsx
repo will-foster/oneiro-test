@@ -79,6 +79,7 @@ export const LoanCalculator = () => {
           name="amount"
           value={formik.values.amount}
           onChange={formik.handleChange}
+          required
         />
 
         <FormControl>
@@ -90,6 +91,7 @@ export const LoanCalculator = () => {
             name="currency"
             value={formik.values.currency}
             onChange={formik.handleChange}
+            required
           >
             <MenuItem value={"GBP"}>GBP</MenuItem>
             <MenuItem value={"USD"}>USD</MenuItem>
@@ -103,6 +105,7 @@ export const LoanCalculator = () => {
           name="rate"
           value={formik.values.rate}
           onChange={formik.handleChange}
+          required
         />
 
         <TextField
@@ -111,6 +114,7 @@ export const LoanCalculator = () => {
           name="margin"
           value={formik.values.margin}
           onChange={formik.handleChange}
+          required
         />
 
         <Button variant="contained" type="submit">

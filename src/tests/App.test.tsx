@@ -15,18 +15,18 @@ describe("App", () => {
     const endDateInput = screen.getByLabelText("End Date");
     expect(endDateInput).toBeInTheDocument();
 
-    const amountInput = screen.getByLabelText("Loan Amount");
+    const amountInput = screen.getByLabelText("Loan Amount *");
     expect(amountInput).toBeInTheDocument();
 
     const currencySelect = screen.getByLabelText("Currency");
     expect(currencySelect).toBeInTheDocument();
 
     const baseInterestRateInput = screen.getByLabelText(
-      "Base Interest Rate (%)"
+      "Base Interest Rate (%) *"
     );
     expect(baseInterestRateInput).toBeInTheDocument();
 
-    const marginInput = screen.getByLabelText("Margin (%)");
+    const marginInput = screen.getByLabelText("Margin (%) *");
     expect(marginInput).toBeInTheDocument();
   });
 
@@ -50,15 +50,15 @@ describe("App", () => {
     await userEvent.click(endDateInput);
     await userEvent.click(screen.getByText("15"));
 
-    const amountInput = screen.getByLabelText("Loan Amount");
+    const amountInput = screen.getByLabelText("Loan Amount *");
     await userEvent.type(amountInput, "10000");
 
     const baseInterestRateInput = screen.getByLabelText(
-      "Base Interest Rate (%)"
+      "Base Interest Rate (%) *"
     );
     await userEvent.type(baseInterestRateInput, "5");
 
-    const marginInput = screen.getByLabelText("Margin (%)");
+    const marginInput = screen.getByLabelText("Margin (%) *");
     await userEvent.type(marginInput, "3");
 
     const calculateButton = screen.getByText("Calculate Loan");
