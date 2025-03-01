@@ -2,6 +2,11 @@
 
 Hi! I've left some basic setup info here, in case it's required. Further notes on the project have either been listed at the bottom of this file, or through the project, just to add some context to decisions.
 
+Example:
+
+<img width="500" alt="image" src="https://github.com/user-attachments/assets/2c9a36df-707d-41e7-a697-b9563c3eb305" />
+
+
 ## Node Version
 
 This project is using node version v22.11.0
